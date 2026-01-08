@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Tabungan Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💰 Celengan Digital</h1>
+        
+        <div class="balance-card">
+            <p>Total Saldo Anda:</p>
+            <h2 id="total-balance">Rp 0</h2>
+        </div>
+
+        <div class="input-group">
+            <input type="number" id="amount" placeholder="Masukkan jumlah Rp...">
+            <div class="buttons">
+                <button onclick="updateSaldo('masuk')" class="btn-deposit">Tabung</button>
+                <button onclick="updateSaldo('keluar')" class="btn-withdraw">Tarik</button>
+            </div>
+        </div>
+
+        <h3>Riwayat Transaksi</h3>
+        <ul id="history"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
